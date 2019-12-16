@@ -119,3 +119,14 @@ nikitamikhaylov@instance-public:~$ curl cat.myzone.example.com
 	</body>
 </html>
 ```
+
+Теперь добавим VPN. Для этого сконфигурируем OpenVPN на новом хосте. 
+
+```
+sudo su && wget https://git.io/vpn -O openvpn-install.sh && bash openvpn-install.sh
+```
+Получим конфигурационный файл (скину проверящему). Устанавливаем клиент себе на ноубук (в моем случае это TunnelBlick) и загружаем файл конфигурации. Подключаемся и видим, что теперь доступен внутренний сервер.
+
+![](images/internal.png)
+
+
